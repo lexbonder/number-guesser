@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0px;
+}
+header{
+  background-color: #404041;
+}
+h1{
+  color: #ED458B;
+  display:inline-block;
+  font-size: 2.5em;
+  font-weight: 800;
+  margin: 0px;
+  padding: 22px;
+  text-align: center;
+}
+h2{
+  color: #ED458B;
+  font-size: 2em;
+  font-weight: 800;
+  text-align: center;
+}
+h3{
+  color: #eb008b;
+  font-size: 5em;
+  font-weight: 300;
+  margin: 0px;
+  text-align: center;
+}
+p{
+  color: #404041;
+  margin: 20px;
+  text-align: center;
+}
+a{
+  color: #ffffff;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+section, footer{
+  margin: 0px auto 25px;
+  width: 100%;
+}
+input{
+  border: 1px solid #D0D2D3;
+  font-size: 1.5em;
+  font-weight: 300;
+  height: 1.5em;
+  width: 33%;
+}
+input, button{
+  display: block;
+  margin: auto;
+}
+input:focus, button:focus{
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+button{
+  background-color: #929497;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 300;
+  height: 30px;
+  margin: auto;
+}
+button:hover{
+  background-color: #EB008b;
+}
+button:disabled{
+  background-color: #D0D2D3;
+}
+.bottom-button, #welcome-clear-button{
+  height: 1.5em;
+  margin: 1% auto;
+  width: 33%;
+}
+.button-wrapper{
+  margin: auto;
+  width: 33%;
+}
+.counter{
+  background-color: #e6e7e8;
+  border-radius: 20px;
+  color: #ED458B;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 3px 0px 0px 0px;
+}
+.game{
+  display:none;
+}
+.header-wrapper{
+  margin: auto;
+  padding: 15px;
+  width: 1186px;
+}
+.not-bold{
+  color: #e6e7e8;
+  font-weight: 300;
+}
+.scorecard{
+  background-color: #ED458B;
+  border-radius: 20px;
+  color: #404041;
+  display:inline-block;
+  font-weight: 700;
+  margin: 12px 0 0 0;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+.welcome{
+  display:block;
+}
+.welcome-message{
+  display: block;
+  margin: 10px;
+  padding: 0px;
+}
+#clear-button, #guess-button, .custom-game{
+  display: inline-block;
+  margin: 1%;
+  width: 47%;
+}
+#clear-button:active, #guess-button:active{
+  border-style: solid;
+}
+#current-range-banner{
+  width: 306px;
+}
+#next-level{
+  display:none;
+}
+#user-guess{
+  margin: 40px auto 0px;
+}

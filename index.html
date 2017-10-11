@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guesser</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class ="header-wrapper">
+      <section class="scorecard" id="current-range-banner">
+        Lv. <span id="level-number">1</span> | # Between
+        <section class="counter" id="current-range-display">
+          <span id="minimum"></span> | <span id="maximum"></span>
+        </section>
+      </section>
+      <h1>Number <span class="not-bold">Guesser</span></h1>
+      <section class="scorecard" id="guesses-window">Guesses
+        <section class="counter" id="guess-counter">0
+        </section>
+      </section>
+      <section class="scorecard" id="high-score-window">High Score
+        <section class="counter" id="high-score-counter">0
+        </section>
+      </section>
+    </div>
+  </header>
+  <div class="game">
+    <section class="user-input">
+      <form>
+          <label for="user-guess" hidden></label>
+        <input type="number" maxlength="3" id="user-guess" placeholder="Enter your guess">
+          <br>
+        <div class="button-wrapper">
+            <label for="guess-button" hidden></label>
+          <button id="guess-button" disabled>Guess</button>
+            <label for="clear-button" hidden></label>
+          <button id="clear-button" disabled>Clear</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <p>Your last guess was:</p>
+      <h3 id="last-guess">##</h3>
+      <p id="system-response">You haven't guessed yet!</p>
+    </section>
+    <a href="index.html" title="Button to reset the game">
+        <label for="reset-button" hidden></label>
+      <button class="bottom-button" id="reset-button">I give up! Reset it!</button>
+    </a>
+      <label for="next-level" hidden></label>
+    <button class="bottom-button" id="next-level">Or... Make it harder..</button>
+  </div>
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  <div class="welcome">
+    <h1 class="welcome-message">Ready to Play?</h1>
+    <h2 class="welcome-message" id="range-message">Enter your own range!</h2>
+    <form>
+      <div class="button-wrapper">
+          <label for="user-min" hidden></label>
+        <input type="number" class="custom-game" id="user-min" placeholder="Low #">
+          <label for="user-max" hidden></label>
+        <input type="number" class="custom-game" id="user-max" placeholder="High #">
+      </div>
+    </form>
+      <label for="welcome-clear-button" hidden></label>
+    <button id="welcome-clear-button" disabled>Clear</button>
+    <h3 id="welcome-last-guess">##</h3>
+      <label for="start-button" hidden></label>
+    <button class="bottom-button" id="start-button">Let's Play 1 - 100!</button>
+  </div>  
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
