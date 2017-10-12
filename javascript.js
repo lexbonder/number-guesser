@@ -6,22 +6,18 @@ var gameStartButton = document.getElementById('start-button');
 var guessButton = document.getElementById('guess-button');
 var guessCounter = document.getElementById('guess-counter');
 var highScore = 0;
-var highScoreCounter = document.getElementById('high-score-counter');
-var level = 1;
-var levelCounter = document.getElementById('level-number');
 var nextLevelButton = document.getElementById('next-level');
 var numberShuffle = window.setInterval(startNumberShuffle, 50);
 var parsedMax;
 var parsedMin;
-var resetButton = document.getElementById('reset-button');
 var systemResponse = document.querySelector('#system-response');
 var userGuess = document.getElementById('user-guess');
 var userMax = document.getElementById('user-max');
 var userMin = document.getElementById('user-min');
-var welcomeScreenBigNumber = document.getElementById('welcome-last-guess');
 var welcomeScreenClearButton = document.getElementById('welcome-clear-button');
 
 function checkHighScore(){
+  var highScoreCounter = document.getElementById('high-score-counter');
   if (highScore === 0 || highScore > count){
     highScoreCounter.innerText = count + 1;
     highScore = count + 1;
@@ -120,6 +116,7 @@ function startButtonTextReset(){
 };
 
 function startNumberShuffle() {
+  var welcomeScreenBigNumber = document.getElementById('welcome-last-guess');
   bigNumber.innerText = Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10);
   welcomeScreenBigNumber.innerText = Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10);
 };
@@ -164,6 +161,8 @@ guessButton.addEventListener('click', function(event){
 });
 
 nextLevelButton.addEventListener('click', function(){
+  var level = 1;
+  var levelCounter = document.getElementById('level-number');
   parsedMin -= 10;
   parsedMax += 10;
   correctAnswer = (Math.floor(Math.random()*(parsedMax-parsedMin+1))+parsedMin);
