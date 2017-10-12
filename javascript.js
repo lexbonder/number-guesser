@@ -215,4 +215,3 @@ window.addEventListener('keyup', function(){
 
 // Random Number Between min and max
 // Math.floor(Math.random()*(max - min + 1) + min)
-
