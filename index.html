@@ -8,7 +8,7 @@
 <body>
   <header>
     <div class ="header-wrapper">
-      <section class="scorecard" id="current-range-banner">
+      <section class="scorecard" id="current-range-banner" tabindex="0">
         Lv. <span id="level-number">1</span> | # Between
         <section class="counter" id="current-range-display">
           <span id="minimum"></span> | <span id="maximum"></span>
@@ -42,9 +42,9 @@
     <section>
       <p>Your last guess was:</p>
       <h3 id="last-guess">##</h3>
-      <p id="system-response">You haven't guessed yet!</p>
+      <p id="system-response" tabindex="0">You haven't guessed yet!</p>
     </section>
-    <a href="index.html" title="Button to reset the game">
+    <a href="index.html" title="Button to reset the game" tabindex="-1">
         <label for="reset-button" hidden></label>
       <button class="bottom-button" id="reset-button">I give up! Reset it!</button>
     </a>
