@@ -83,15 +83,15 @@ function gameReset(){
 };
 
 function lastGuess(){
-  if (userGuess.value < parsedMin || userGuess.value > parsedMax){
+  if (userGuess.value < parsedMin || userGuess.value > parsedMax) {
     bigNumber.innerText = '??';
-  }else{
+  } else {
     bigNumber.innerText = (userGuess.value);
   };
 };
 
 function levelCompleted(){
-  document.getElementById('reset-button').innerText=('Play Again?');
+  document.getElementById('reset-button').innerText = 'Play Again?';
   document.getElementById('next-level').style.display = 'block';
   document.querySelector('.user-input').style.display = 'none';
 };
@@ -204,9 +204,6 @@ window.addEventListener('keyup', function(){
     startButtonTextReset();
   };
 });
-
-// run vox on site. make it work.
-
 
 // -----Notes---------------
 
