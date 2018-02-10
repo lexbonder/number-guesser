@@ -15,4 +15,6 @@ The features in this game I'm most proud of are the jumbling numbers on the welc
 #### Gameplay
 
 ![Correct Guess](screenshots/correct-answer.png)
+![Incorrect Guess](screenshots/incorrect-guess.png)
+![Too Low](screenshots/too-low.png)
 
