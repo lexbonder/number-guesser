@@ -10,7 +10,7 @@ The features in this game I'm most proud of are the jumbling numbers on the welc
 
 #### Welcome Screen
 
-![Welcome Screen](http://recordit.co/OJupmP4bez)
+![Welcome Screen](http://g.recordit.co/OJupmP4bez.gif)
 
 #### Gameplay
 
